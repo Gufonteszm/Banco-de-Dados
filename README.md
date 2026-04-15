@@ -13,5 +13,5 @@
 <p>lógico: https://app.brmodeloweb.com/#!/publicview/69df71ffe33b4dc332f933fb</p>
 
 <h2>Veterinária</h2>
-<p>conceitual: </p>
-<p>lógico: </p>
+<p>conceitual: https://app.brmodeloweb.com/#!/publicview/69d7c100e56bc192cf505b3c</p>
+<p>lógico: https://app.brmodeloweb.com/#!/publicview/69df7acde33b4dc332f9387f</p>
