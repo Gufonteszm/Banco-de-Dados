@@ -1,4 +1,5 @@
 # Banco-de-Dados
 
-<h1>Imobiliária:</h1>
-<p>https://app.brmodeloweb.com/#!/publicview/69b295bc25dde5c84617f3fa</p>
+<h2>Imobiliária</h2>
+<p>conceitual: https://app.brmodeloweb.com/#!/publicview/69b295bc25dde5c84617f3fa</p>
+<p>lógico: https://app.brmodeloweb.com/#!/publicview/69df70c4e33b4dc332f93313</p>
