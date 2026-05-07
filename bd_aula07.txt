@@ -1,0 +1,67 @@
+CREATE TABLE tatuadores 
+( 
+ idtatuador INT PRIMARY KEY  
+ idsenioridade TEXT  
+ nomeartistico VARCHAR(100) 
+ telefone VARCHAR(20)  
+ datacontrataçao DATE
+); 
+
+---------------
+
+CREATE TABLE estilos 
+( 
+ estilo VARCHAR(100) PRIMARY KEY  
+ descriçao TEXT  
+); 
+
+---------------
+
+CREATE TABLE cliente 
+( 
+ idcliente INT PRIMARY KEY 
+ cpf CHAR(11) 
+ cidade INT 
+ nomecompleto VARCHAR(100)  
+ datacadastro DATE  
+ telefone VARCHAR(20)  
+); 
+
+---------------
+
+CREATE TABLE agendamento 
+( 
+ idagendamento INT PRIMARY KEY  
+ idtatuadores INT  
+ idcliente INT  
+ descriçaotatuagem INT  
+ valor INT  
+ horario INT  
+ data DATE 
+); 
+
+---------------
+
+CREATE TABLE senioridade 
+( 
+ pleno INT,  
+ senior INT,  
+ junior INT,  
+); 
+
+---------------
+
+CREATE TABLE domina 
+( 
+ idtatuador INT PRIMARY KEY,  
+ estilo INT PRIMARY KEY,  
+ dataestilo INT,  
+); 
+
+---------------
+
+ALTER TABLE tatuadores ADD FOREIGN KEY(idsenioridade) REFERENCES senioridade (idsenioridade)
+ALTER TABLE agendamento ADD FOREIGN KEY(idtatuadores) REFERENCES tatuadores (idtatuadores)
+ALTER TABLE agendamento ADD FOREIGN KEY(idcliente) REFERENCES cliente (idcliente)
+ALTER TABLE domina ADD FOREIGN KEY(idtatuador) REFERENCES tatuadores (idtatuador)
+ALTER TABLE domina ADD FOREIGN KEY(estilo) REFERENCES estilos (estilo)
